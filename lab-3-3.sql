@@ -16,3 +16,8 @@
 -- | 2004 | St. Louis Cardinals           | 105       |
 
 
+select year, max(wins) w
+from teams
+where year > 1959
+group by year 
+order by w desc
